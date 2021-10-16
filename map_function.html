@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let aes1= [
+            [1,3,6],
+            [4,6,8],
+            [5,9,3]
+        ]
+        let aes2= [
+            [1,3,6],
+            [4,6,8],
+            [5,9,3]
+        ]
+        let aes3=[[],[],[]]
+
+        aes3=aes1.map((each,i)=>{
+            let r1=[]
+            r1=each.map((each1,i2)=>{
+                return each1+aes2[i][i2]
+            })
+            return r1   
+        })
+
+         console.log(aes3)
+    </script>
+</body>
+</html>
